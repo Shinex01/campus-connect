@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campus Connect</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Campus Connect</h1>
+      <p>Find your guide, team, or next opportunity</p>
+      <a href="#post" class="post-btn">+ Post a quest</a>
+    </header>
+
+    <main>
+      <section class="board">
+        <article class="card guide">
+          <span class="tag">Guide</span>
+          <h2>Learn Web Development From Zero</h2>
+          <p class="meta">Offered by a 4th-year dev</p>
+          <p class="skills">HTML · CSS · JavaScript</p>
+          <p class="time">1 hr/week</p>
+          <button>Respond</button>
+        </article>
+
+        <article class="card squad">
+          <span class="tag">Squad</span>
+          <h2>Campus Events Website</h2>
+          <p class="meta">Need: 1 designer, 1 backend dev</p>
+          <p class="skills">Design · Backend</p>
+          <p class="time">2 weeks</p>
+          <button>Join</button>
+        </article>
+
+        <article class="card opportunity">
+          <span class="tag">Opportunity</span>
+          <h2>Student Hackathon</h2>
+          <p class="meta">Beginner-friendly</p>
+          <p class="skills">Any skill level</p>
+          <p class="time">Closes in 3 days</p>
+          <button>Apply</button>
+        </article>
+
+        <article class="card swap">
+          <span class="tag">Skill Swap</span>
+          <h2>I teach CSS, I want to learn Python</h2>
+          <p class="meta">Looking for a swap partner</p>
+          <p class="skills">CSS · Python</p>
+          <p class="time">2-week sprint</p>
+          <button>Swap</button>
+        </article>
+
+        <article class="card squad">
+          <span class="tag">Squad</span>
+          <h2>Study Group: JavaScript Basics</h2>
+          <p class="meta">Need: 3 learners</p>
+          <p class="skills">JavaScript</p>
+          <p class="time">2 weeks</p>
+          <button>Join</button>
+        </article>
+
+        <article class="card opportunity">
+          <span class="tag">Opportunity</span>
+          <h2>Tech Internship for Students</h2>
+          <p class="meta">Open to all courses</p>
+          <p class="skills">Any skill</p>
+          <p class="time">Closes in 7 days</p>
+          <button>Apply</button>
+        </article>
+      </section>
+
+      <section class="post-section" id="post">
+        <h2>Post a quest</h2>
+        <p>Need a guide, teammates, or a swap partner? Tell the campus.</p>
+
+        <form class="post-form" id="postForm">
+          <label
+            >Type
+            <select id="type">
+              <option>Guide</option>
+              <option>Squad</option>
+              <option>Opportunity</option>
+              <option>Skill Swap</option>
+            </select>
+          </label>
+
+          <label
+            >Title
+            <input
+              type="text"
+              id="title"
+              placeholder="e.g. Need a designer for a campus app"
+            />
+          </label>
+
+          <label
+            >What do you need?
+            <textarea
+              id="need"
+              rows="3"
+              placeholder="One or two lines"
+            ></textarea>
+          </label>
+
+          <label
+            >Skills
+            <input type="text" id="skills" placeholder="e.g. HTML, Figma" />
+          </label>
+
+          <label
+            >Deadline
+            <input type="date" id="deadline" />
+          </label>
+          <p id="formMessage" class="form-message"></p>
+          <button type="submit" id="formSubmit">Post quest</button>
+        </form>
+      </section>
+
+      <section class="squad-section" id="squad">
+        <h2>Your Squad</h2>
+        <div class="squad-header">
+          <div>
+            <span class="tag squad-tag">Squad</span>
+            <h3>Campus Events Website</h3>
+            <p class="meta">Goal: build a campus events website in 2 weeks</p>
+          </div>
+          <div class="days-left">
+            <strong>12</strong>
+            <span>days left</span>
+          </div>
+        </div>
+
+        <div class="squad-grid">
+          <div class="squad-box">
+            <h4>Members</h4>
+            <ul class="members">
+              <li><span class="avatar">A</span> Adesina <em>Frontend</em></li>
+              <li class="open">
+                <span class="avatar">?</span> Open slot <em>Designer</em>
+              </li>
+              <li class="open">
+                <span class="avatar">?</span> Open slot <em>Backend</em>
+              </li>
+            </ul>
+          </div>
+
+          <div class="squad-box">
+            <h4>Check-ins</h4>
+            <ul class="checkins">
+              <li>Week 1: Layout done</li>
+              <li>Week 2: Launch</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 Campus Connect. All rights reserved.</p>
+      <p>Photo by Brooke Cagle on Unsplash.</p>
+    </footer>
+  </body>
+</html>
