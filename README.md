@@ -4,7 +4,7 @@ A Quest Board for students: find guides, teammates, and opportunities through st
 
 Built for Nova Challenge #02.
 
-🔗 Live prototype: [paste your Vercel link here]
+🔗 Live prototype: https://campus-connect-silk-pi.vercel.app/
 
 ## The problem
 
